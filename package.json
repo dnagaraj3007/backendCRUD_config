@@ -1,0 +1,33 @@
+{
+  "name": "backend_crud",
+  "version": "1.0.0",
+  "description": "Backend sample CRUD",
+  "main": "app.js",
+  "scripts": {
+    "eslint": "eslint src/**",
+    "start": "nodemon -r esm app.js",
+    "test": "jest --watchAll --collect-coverage"
+  },
+  "author": "Naga Raj",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.0"
+  },
+  "jest": {
+   "testEnvironment": "node",
+   "coveragePathIgnorePatterns": [
+     "/node_modules/"
+    ],
+   "collectCoverageFrom" : ["src/**/*.*.js"]
+  }
+}
